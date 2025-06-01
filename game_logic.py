@@ -143,7 +143,9 @@ def play_game():
                 loser = player
                 break
             while True:
+                
                 user_input = input(f"{player.name}, press Enter to play a card or type 'restart' to restart the game or to know the rules type 'rules': ").lower()
+                print(f"\nCurrent Scores: {players[0].name}: {players[0].score}, {players[1].name}: {players[1].score}")
 
                 if user_input == 'restart':
                     print("\nRestarting the game...\n")
@@ -156,6 +158,7 @@ def play_game():
                     print("- Game ends when count reaches zero or below.\n")
                     continue  
                 else:
+
                     break  
 
 
